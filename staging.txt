@@ -1,0 +1,22 @@
+Insert into S_triPeople  values ('123','Ready','','','john@ap.jll.com','10002','John Clerk','Active User');
+
+
+Insert into S_triPeople  values ('john@ap.jll.com','10003','John Clerk','Active User');
+
+Select TRIIDTX from T_triPeople;
+Select * from T_triPeople where TRIIDTX='100001';
+
+CREATE TABLE S_triPeople (
+	TRIRIGA_RECORD_ID VARCHAR2(1000) ,
+	TRANSACTION_ID VARCHAR2(1000) ,
+	HR_ID VARCHAR2(1000) ,
+	NAME VARCHAR2(1000) ,
+	EMAIL VARCHAR2(1000) ,
+	TRIRIGA_USER_STATUS VARCHAR2(1000)
+  );
+  
+  Select * from S_triPeople;
+  Delete from S_triPeople;
+  Commit;
+
+SFTP /FTP location to test file schema
